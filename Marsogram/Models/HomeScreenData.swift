@@ -11,9 +11,11 @@ import Foundation
 class HomeScreenData {
     let titleData: TitleData
     let customMessageData: CustomMessageData
+    let marsPhotos: [MarsPhoto] 
     
-    init(titleData: TitleData, customMessageData: CustomMessageData) {
+    init(titleData: TitleData, customMessageData: CustomMessageData, marsPhotos: [MarsPhoto]) {
         self.titleData = titleData
         self.customMessageData = customMessageData
+        self.marsPhotos = marsPhotos
     }
 }

@@ -15,15 +15,20 @@ class MainAppCoordinator: ObservableObject {
     
     lazy var homeCoordinator: HomeCoordinator? = self.createHomeCoordinator()
     lazy var historyCoordinator: HistoryCoordinator? = self.createHistoryCoordinator()
-    lazy var viewPhotoCoordinator: ViewPhotoCoordinator? = self.createViewPhotoCoordinator()
+    @Published var viewPhotoCoordinator: ViewPhotoCoordinator?
     
     private func createHomeCoordinator() -> HomeCoordinator {
         let data = HomeScreenData(
             titleData: TitleData(title: "Home"),
-            customMessageData: CustomMessageData(customMessage: "Welcome to the Home Screen")
+            customMessageData: CustomMessageData(customMessage: "Welcome to the Home Screen"),
+            marsPhotos: [
+                MarsPhoto(rover: "Curiosity", camera: "Front Hazard Avoidance Camera", date: "June 6, 2019", imageName: "mars1"),
+                MarsPhoto(rover: "Opportunity", camera: "Panoramic Camera", date: "July 18, 2018", imageName: "mars2"),
+                MarsPhoto(rover: "Spirit", camera: "Navigation Camera", date: "March 3, 2010", imageName: "mars3")
+            ]
         )
         let coordinator = HomeCoordinator(data: data)
-        coordinator.mainCoordinator = self  // Устанавливаем ссылку на MainAppCoordinator
+        coordinator.mainCoordinator = self
         return coordinator
     }
     
@@ -33,36 +38,30 @@ class MainAppCoordinator: ObservableObject {
             historyData: HistoryData(historyItems: ["Item 1", "Item 2"])
         )
         let coordinator = HistoryCoordinator(data: data)
-        coordinator.mainCoordinator = self  // Устанавливаем ссылку на MainAppCoordinator
+        coordinator.mainCoordinator = self
         return coordinator
     }
     
-    private func createViewPhotoCoordinator() -> ViewPhotoCoordinator {
+    private func createViewPhotoCoordinator(photo: MarsPhoto) -> ViewPhotoCoordinator {
         let data = ViewPhotoScreenData(
             titleData: TitleData(title: "View Photo"),
-            photoData: PhotoData(photoName: "SamplePhoto.jpg")
+            photoData: PhotoData(photoName: photo.imageName)
         )
         let coordinator = ViewPhotoCoordinator(data: data)
-        coordinator.mainCoordinator = self  // Устанавливаем ссылку на MainAppCoordinator
+        coordinator.mainCoordinator = self
         return coordinator
     }
     
-    func updateHomeCoordinator(with customMessage: String) {
-        homeCoordinator?.updateData(with: customMessage)
-    }
-    
-    func updateHistoryCoordinator(with historyItems: [String]) {
-        historyCoordinator?.updateData(with: historyItems)
-    }
-    
-    func updateViewPhotoCoordinator(with photoName: String) {
-        viewPhotoCoordinator?.updateData(with: photoName)
+    func showPhotoDetails(for photo: MarsPhoto) {
+        viewPhotoCoordinator = createViewPhotoCoordinator(photo: photo)
+        currentView = .viewPhoto
     }
     
     func navigateTo(_ view: MainView) {
         currentView = view
     }
 }
+
 
 
 

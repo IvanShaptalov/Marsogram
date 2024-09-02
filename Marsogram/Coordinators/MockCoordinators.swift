@@ -19,7 +19,12 @@ class MockHomeCoordinator: HomeCoordinator {
     init() {
         let mockData = HomeScreenData(
             titleData: TitleData(title: "Mock Home"),
-            customMessageData: CustomMessageData(customMessage: "This is a mock home screen")
+            customMessageData: CustomMessageData(customMessage: "This is a mock home screen"),
+            marsPhotos: [
+                MarsPhoto(rover: "Mock Rover 1", camera: "Mock Camera 1", date: "January 1, 2021", imageName: "mars1"),
+                MarsPhoto(rover: "Mock Rover 2", camera: "Mock Camera 2", date: "February 2, 2022", imageName: "mars2"),
+                MarsPhoto(rover: "Mock Rover 3", camera: "Mock Camera 3", date: "March 3, 2023", imageName: "mars3")
+            ]
         )
         super.init(data: mockData)
     }

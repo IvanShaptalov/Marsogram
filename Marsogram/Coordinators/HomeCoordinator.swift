@@ -20,7 +20,10 @@ class HomeCoordinator: ObservableObject {
     func updateData(with customMessage: String) {
         self.data = HomeScreenData(
             titleData: TitleData(title: self.data.titleData.title),
-            customMessageData: CustomMessageData(customMessage: customMessage)
+            customMessageData: CustomMessageData(customMessage: customMessage),
+            marsPhotos: self.data.marsPhotos
         )
     }
 }
+
+

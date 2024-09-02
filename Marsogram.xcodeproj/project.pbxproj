@@ -14,8 +14,12 @@
 		8D46CF8C2C81C0EE00FB3DE2 /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46CF8B2C81C0EE00FB3DE2 /* AppFonts.swift */; };
 		8D46CF8E2C81C20700FB3DE2 /* TextFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D46CF8D2C81C20700FB3DE2 /* TextFontExtension.swift */; };
 		8D523ED12C81DA2600BD508F /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D523ED02C81DA2600BD508F /* SplashScreen.swift */; };
-		8D523ED42C81DE6C00BD508F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8D523ED32C81DE6C00BD508F /* Lottie */; };
 		8D523ED82C81FD7B00BD508F /* LaunchScreen1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D523ED72C81FD7B00BD508F /* LaunchScreen1.storyboard */; };
+		8D8D8ABB2C86578800A43FBE /* MarsPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D8ABA2C86578800A43FBE /* MarsPhoto.swift */; };
+		8D8D8ABD2C8657AA00A43FBE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D8ABC2C8657AA00A43FBE /* ContentView.swift */; };
+		8D8D8AC12C8657E100A43FBE /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D8ABE2C8657E100A43FBE /* CircularButton.swift */; };
+		8D8D8AC22C8657E100A43FBE /* MarsPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D8ABF2C8657E100A43FBE /* MarsPhotoCell.swift */; };
+		8D8D8AC42C86580C00A43FBE /* DateFormatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8D8AC32C86580C00A43FBE /* DateFormatExtension.swift */; };
 		8DA3452A2C8619BC008D91AA /* MainAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA345292C8619BC008D91AA /* MainAppCoordinator.swift */; };
 		8DA3452E2C861C9C008D91AA /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA3452D2C861C9C008D91AA /* HomeCoordinator.swift */; };
 		8DA345302C861CC5008D91AA /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA3452F2C861CC5008D91AA /* HistoryCoordinator.swift */; };
@@ -31,12 +35,11 @@
 		8DA345452C862372008D91AA /* HomeScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA345442C862372008D91AA /* HomeScreenData.swift */; };
 		8DA345472C86237E008D91AA /* HistoryScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA345462C86237E008D91AA /* HistoryScreenData.swift */; };
 		8DA345492C862389008D91AA /* ViewPhotoScreenData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA345482C862389008D91AA /* ViewPhotoScreenData.swift */; };
+		8DAA15112C86569F000D1219 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 8DAA15102C86569F000D1219 /* Lottie */; };
 		8DD7734D2C809F24001C31A5 /* MarsogramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7734C2C809F24001C31A5 /* MarsogramApp.swift */; };
-		8DD7734F2C809F24001C31A5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7734E2C809F24001C31A5 /* ContentView.swift */; };
 		8DD773512C809F25001C31A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD773502C809F25001C31A5 /* Assets.xcassets */; };
 		8DD773542C809F25001C31A5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DD773532C809F25001C31A5 /* Preview Assets.xcassets */; };
 		8DD773562C809F25001C31A5 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD773552C809F25001C31A5 /* Persistence.swift */; };
-		8DD773592C809F25001C31A5 /* Marsogram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8DD773572C809F25001C31A5 /* Marsogram.xcdatamodeld */; };
 		8DD773632C809F26001C31A5 /* MarsogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD773622C809F26001C31A5 /* MarsogramTests.swift */; };
 		8DD7736D2C809F26001C31A5 /* MarsogramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7736C2C809F26001C31A5 /* MarsogramUITests.swift */; };
 		8DD7736F2C809F26001C31A5 /* MarsogramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD7736E2C809F26001C31A5 /* MarsogramUITestsLaunchTests.swift */; };
@@ -67,6 +70,11 @@
 		8D46CF8D2C81C20700FB3DE2 /* TextFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFontExtension.swift; sourceTree = "<group>"; };
 		8D523ED02C81DA2600BD508F /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		8D523ED72C81FD7B00BD508F /* LaunchScreen1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen1.storyboard; sourceTree = "<group>"; };
+		8D8D8ABA2C86578800A43FBE /* MarsPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsPhoto.swift; sourceTree = "<group>"; };
+		8D8D8ABC2C8657AA00A43FBE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8D8D8ABE2C8657E100A43FBE /* CircularButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
+		8D8D8ABF2C8657E100A43FBE /* MarsPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarsPhotoCell.swift; sourceTree = "<group>"; };
+		8D8D8AC32C86580C00A43FBE /* DateFormatExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFormatExtension.swift; sourceTree = "<group>"; };
 		8DA345292C8619BC008D91AA /* MainAppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppCoordinator.swift; sourceTree = "<group>"; };
 		8DA3452D2C861C9C008D91AA /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		8DA3452F2C861CC5008D91AA /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
@@ -84,11 +92,9 @@
 		8DA345482C862389008D91AA /* ViewPhotoScreenData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPhotoScreenData.swift; sourceTree = "<group>"; };
 		8DD773492C809F24001C31A5 /* Marsogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marsogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD7734C2C809F24001C31A5 /* MarsogramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsogramApp.swift; sourceTree = "<group>"; };
-		8DD7734E2C809F24001C31A5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8DD773502C809F25001C31A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DD773532C809F25001C31A5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DD773552C809F25001C31A5 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		8DD773582C809F25001C31A5 /* Marsogram.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Marsogram.xcdatamodel; sourceTree = "<group>"; };
 		8DD7735E2C809F26001C31A5 /* MarsogramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsogramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DD773622C809F26001C31A5 /* MarsogramTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarsogramTests.swift; sourceTree = "<group>"; };
 		8DD773682C809F26001C31A5 /* MarsogramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarsogramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D523ED42C81DE6C00BD508F /* Lottie in Frameworks */,
+				8DAA15112C86569F000D1219 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +134,15 @@
 				8D46CF832C81BE0300FB3DE2 /* SF-Pro.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8D8D8AC02C8657E100A43FBE /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				8D8D8ABE2C8657E100A43FBE /* CircularButton.swift */,
+				8D8D8ABF2C8657E100A43FBE /* MarsPhotoCell.swift */,
+			);
+			path = SubViews;
 			sourceTree = "<group>";
 		};
 		8DA3453B2C86233E008D91AA /* Base */ = {
@@ -175,10 +190,8 @@
 				8DD7737C2C809F66001C31A5 /* Views */,
 				8DD7737B2C809F5F001C31A5 /* Models */,
 				8DD7734C2C809F24001C31A5 /* MarsogramApp.swift */,
-				8DD7734E2C809F24001C31A5 /* ContentView.swift */,
 				8DD773502C809F25001C31A5 /* Assets.xcassets */,
 				8DD773552C809F25001C31A5 /* Persistence.swift */,
-				8DD773572C809F25001C31A5 /* Marsogram.xcdatamodeld */,
 				8DD773522C809F25001C31A5 /* Preview Content */,
 				8D46CF7F2C81BDDC00FB3DE2 /* AppConfig.swift */,
 			);
@@ -217,6 +230,7 @@
 				8DA345442C862372008D91AA /* HomeScreenData.swift */,
 				8DA345462C86237E008D91AA /* HistoryScreenData.swift */,
 				8DA345482C862389008D91AA /* ViewPhotoScreenData.swift */,
+				8D8D8ABA2C86578800A43FBE /* MarsPhoto.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,10 +238,12 @@
 		8DD7737C2C809F66001C31A5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				8D8D8AC02C8657E100A43FBE /* SubViews */,
 				8D523ED02C81DA2600BD508F /* SplashScreen.swift */,
 				8DA345332C861E28008D91AA /* HomeView.swift */,
 				8DA345352C861E5B008D91AA /* HistoryView.swift */,
 				8DA345372C861E77008D91AA /* ViewPhotoView.swift */,
+				8D8D8ABC2C8657AA00A43FBE /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +251,7 @@
 		8DD7737D2C809F91001C31A5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				8D8D8AC32C86580C00A43FBE /* DateFormatExtension.swift */,
 				8D46CF8D2C81C20700FB3DE2 /* TextFontExtension.swift */,
 			);
 			path = Extensions;
@@ -307,7 +324,7 @@
 			);
 			name = Marsogram;
 			packageProductDependencies = (
-				8D523ED32C81DE6C00BD508F /* Lottie */,
+				8DAA15102C86569F000D1219 /* Lottie */,
 			);
 			productName = Marsogram;
 			productReference = 8DD773492C809F24001C31A5 /* Marsogram.app */;
@@ -435,22 +452,25 @@
 				8DA3453A2C861F36008D91AA /* MockCoordinators.swift in Sources */,
 				8DA3453D2C86234B008D91AA /* TitleData.swift in Sources */,
 				8DA345472C86237E008D91AA /* HistoryScreenData.swift in Sources */,
+				8D8D8ABB2C86578800A43FBE /* MarsPhoto.swift in Sources */,
 				8DA345322C861CD8008D91AA /* ViewPhotoCoordinator.swift in Sources */,
 				8DA345412C86235F008D91AA /* HistoryData.swift in Sources */,
+				8D8D8AC12C8657E100A43FBE /* CircularButton.swift in Sources */,
+				8D8D8AC22C8657E100A43FBE /* MarsPhotoCell.swift in Sources */,
 				8DA345432C862367008D91AA /* PhotoData.swift in Sources */,
 				8DA345342C861E28008D91AA /* HomeView.swift in Sources */,
 				8D46CF8E2C81C20700FB3DE2 /* TextFontExtension.swift in Sources */,
 				8DD773562C809F25001C31A5 /* Persistence.swift in Sources */,
+				8D8D8ABD2C8657AA00A43FBE /* ContentView.swift in Sources */,
 				8DA345382C861E77008D91AA /* ViewPhotoView.swift in Sources */,
 				8D46CF802C81BDDC00FB3DE2 /* AppConfig.swift in Sources */,
 				8DA345452C862372008D91AA /* HomeScreenData.swift in Sources */,
 				8DA345362C861E5B008D91AA /* HistoryView.swift in Sources */,
-				8DD7734F2C809F24001C31A5 /* ContentView.swift in Sources */,
 				8DD7734D2C809F24001C31A5 /* MarsogramApp.swift in Sources */,
+				8D8D8AC42C86580C00A43FBE /* DateFormatExtension.swift in Sources */,
 				8DA3452E2C861C9C008D91AA /* HomeCoordinator.swift in Sources */,
 				8DA345492C862389008D91AA /* ViewPhotoScreenData.swift in Sources */,
 				8DA3452A2C8619BC008D91AA /* MainAppCoordinator.swift in Sources */,
-				8DD773592C809F25001C31A5 /* Marsogram.xcdatamodeld in Sources */,
 				8DA3453F2C862356008D91AA /* CustomMessageData.swift in Sources */,
 				8DA345302C861CC5008D91AA /* HistoryCoordinator.swift in Sources */,
 			);
@@ -807,25 +827,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8D523ED32C81DE6C00BD508F /* Lottie */ = {
+		8DAA15102C86569F000D1219 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8D523ED22C81DE6C00BD508F /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		8DD773572C809F25001C31A5 /* Marsogram.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8DD773582C809F25001C31A5 /* Marsogram.xcdatamodel */,
-			);
-			currentVersion = 8DD773582C809F25001C31A5 /* Marsogram.xcdatamodel */;
-			path = Marsogram.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8DD773412C809F24001C31A5 /* Project object */;
 }
